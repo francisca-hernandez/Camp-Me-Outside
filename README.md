@@ -5,7 +5,7 @@ Campsite locator and fireside story generator
 ##Project Description
  
  
- ##Acceptance Criteria
+##Acceptance Criteria
  
 
 ##User Story
