@@ -2,22 +2,22 @@
 Campsite locator and fireside story generator
 
 
-##Project Description
+## Project Description
  
  
-##Acceptance Criteria
+## Acceptance Criteria
  
 
-##User Story
+## User Story
  
  
- ##How to Install and Run the Project
+## How to Install and Run the Project
  
  
- ##How to Use 
+## How to Use 
  
  
- ##Built with
+## Built with
  
  
- ##Contributers
+## Contributers
