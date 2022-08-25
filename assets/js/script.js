@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 
-  let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&";
+  let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&apikey=ad1485d4-8c3a-403d-8244-10d0d8498353";
   let $campsiteContainer = document.getElementById("campsite-container");
   let $modalContainer = document.querySelector(".modal-container");
 
