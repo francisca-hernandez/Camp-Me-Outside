@@ -1,23 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampMeOutside</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/camp.ico">
+</head>
+
+<body>
+  <section class="hero is-success is-medium">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="assets/images/camp.png" height="28" width="50" alt="Logo">
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item">
+                Campsites
+              </a>
+              <a class="navbar-item">
+                Campfire Stories
+              </a>
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted">
+                  <span>
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Book A Campsite</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          CampMeOutside
+        </p>
+        <p id="zip">
+          <Label>Enter in a Zip Code: </Label><input type="text" pattern="[0-9]{5}" title="Five digit zip code" />
+        </p>
+      </div>
+
+      <!-- Beginning of container to hold the two columns -->
+      <section class="columns">
+        <!-- campsite container -->
+        <section class="column is-mobile" id="campsite-container">
+          <h2>Campsites</h2>
+        </section>
+
+        <!-- campstory container -->
+        <section class="column is-mobile" id="campstory-container">
+          <h2>Campfire Stories</h2>
+        </section>
+
+      </section>
+
     </div>
   </section>
+  </section>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <a class="navbar-item">
+      <h2>About Us</h2>
+    </a>
+
+    <div class="navbar-item has-dropdown is-hoverable" id="safety">
+      <a class="navbar-link">
+        <h2>Safety Information</h2>
+      </a>
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Fire Information
+        </a>
+
+        <a class="navbar-item">
+          General Camping Safety Guidlines
+        </a>
+      </div>
+    </div>
+    <div class="navbar-item has-dropdown is-hoverable" id="more">
+      <a class="navbar-link">
+        <h2>More</h2>
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Camp Songs
+        </a>
+        <a class="navbar-item">
+          Jokes to Tell Around the Fire
+        </a>
+        <a class="navbar-item">
+          Outdoor Activites
+        </a>
+        <hr class="navbar-divider">
+      </div>
+    </div>
+  </nav>
+
   <script src="assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
