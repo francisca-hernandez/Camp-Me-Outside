@@ -1,7 +1,21 @@
-/* Hero Section */
-
-/* zip code search bar */
-#zip {
-    /* figure out how to align */
+/* Title */
+.hero .title {
+    font-weight: 900;
+    font-size: 40pt;
+    color: white;
 }
+
+/* Hero Section */
+.hero {
+    background-image: url("../images/herobackground.jpeg");
+    /* background-size: cover; */
+    background-position: center;
+    position: relative;
+}
+a.navbar-item:hover {
+    background-color:#445348;
+}
+
+/* US state search bar */
+
 
