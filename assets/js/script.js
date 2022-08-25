@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-  });
+
 
   let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&";
   let $campsiteContainer = document.getElementById("campsite-container");
@@ -60,5 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
       });
     };
+  });
+
   });
 
