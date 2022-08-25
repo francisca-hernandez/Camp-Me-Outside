@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
+<<<<<<< HEAD
   });
 
   let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&";
@@ -62,3 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   });
 
+=======
+  });
+>>>>>>> develop
