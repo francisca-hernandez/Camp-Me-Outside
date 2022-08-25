@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   });
 
-  let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&apikey=";
+  let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&";
   let $campsiteContainer = document.getElementById("campsite-container");
   let $modalContainer = document.querySelector(".modal-container");
 
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
           let $campsiteName = document.createElement("h3");
           $campsiteName.classList = ("card-header-title");
           $campsiteName.textContent = data.RECDATA[i].FacilityName;
-
+       
           let $campsiteDescription = document.createElement("p");
           $campsiteDescription.classList = ("card-content");
           $campsiteDescription.innerHTML = data.RECDATA[i].FacilityDescription;
@@ -50,6 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
           
           // $campsiteCard.id = ("modal" + [i]);
           // $campsiteCard.classList = ("modal");
+
+          // $modalContainer.appendChild($campsiteCard);
+
+          
           
 
 
