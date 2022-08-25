@@ -36,6 +36,11 @@
 
 This site was build using [Github Pages]()
  
+<<<<<<< HEAD
 ## Contributers
 
 
+=======
+ ##Contributers
+  test git
+>>>>>>> origin
