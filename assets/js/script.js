@@ -19,4 +19,48 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
+
+
+  let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&";
+  let $campsiteContainer = document.getElementById("campsite-container");
+  let $modalContainer = document.querySelector(".modal-container");
+
+
+  fetch(url).then(function(response) {
+    if (response.ok) {
+      response.json().then(function(data) {
+        console.log(data.RECDATA);
+
+        for (i = 0; i < data.RECDATA.length; i++) {
+          let $campsiteCard = document.createElement("div")
+          $campsiteCard.classList = ("card my-1");
+
+          let $campsiteName = document.createElement("h3");
+          $campsiteName.classList = ("card-header-title");
+          $campsiteName.textContent = data.RECDATA[i].FacilityName;
+       
+          let $campsiteDescription = document.createElement("p");
+          $campsiteDescription.classList = ("card-content");
+          $campsiteDescription.innerHTML = data.RECDATA[i].FacilityDescription;
+
+          $campsiteCard.appendChild($campsiteName);
+          $campsiteCard.appendChild($campsiteDescription);
+          $campsiteContainer.appendChild($campsiteCard);
+
+          
+          // $campsiteCard.id = ("modal" + [i]);
+          // $campsiteCard.classList = ("modal");
+
+          // $modalContainer.appendChild($campsiteCard);
+
+          
+          
+
+
+        };
+      });
+    };
   });
+
+  });
+
