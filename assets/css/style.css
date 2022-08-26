@@ -7,13 +7,19 @@
 
 /* Hero Section */
 .hero {
-    background-image: url("../images/heroBG1.jpg");
+    background-image: url("../images/heroBG6.jpg");
     /* background-size: cover; */
     background-position: center;
     position: relative;
 }
 .navbar-end {
-    background-color:#f5c25c;*
+    background-color:transparent;
+}
+.navbar-item {
+    color: orange;
+}
+.navbar-burger {
+    color: white;
 }
 
 /* US state search bar */
