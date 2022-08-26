@@ -1,5 +1,5 @@
 /* Title */
-.hero .title {
+.title {
     font-weight: 900;
     font-size: 40pt;
     color: white;
@@ -7,13 +7,13 @@
 
 /* Hero Section */
 .hero {
-    background-image: url("../images/herobackground.jpeg");
+    background-image: url("../images/heroBG1.jpg");
     /* background-size: cover; */
     background-position: center;
     position: relative;
 }
-a.navbar-item:hover {
-    background-color:#445348;
+.navbar-end {
+    background-color:#f5c25c;*
 }
 
 /* US state search bar */
