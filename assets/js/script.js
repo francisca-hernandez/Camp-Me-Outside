@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             $campsiteCard.appendChild($modalCardHeader);
 
             let $modalTargetButton = document.createElement("button");
-            $modalTargetButton.classList = ("js-modal-trigger");
+            $modalTargetButton.classList = ("js-modal-trigger button is-primary");
             $modalTargetButton.setAttribute("data-target", $campsiteCard.id)
             $modalTargetButton.textContent = data.RECDATA[i].FacilityName;
 
