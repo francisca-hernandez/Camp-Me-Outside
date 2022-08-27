@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $target.classList.toggle('is-active');
 
     });
+
   });
 
 
@@ -27,23 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
   let $usStatesContainer = document.querySelector("#us-states-container");
   let $modalContainer = document.querySelector(".modal-container");
 
-  // event listener for when options are changed
-  $usStatesContainer.addEventListener('change', function (event) {
-
-    let $selectedState = $usStatesContainer.value;
-
-    let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=" + $selectedState + "&radius=10&activity=CAMPING&lastupdated=10-01-2018&apikey=ad1485d4-8c3a-403d-8244-10d0d8498353";
+    // event listener for when options are changed
+    $usStatesContainer.addEventListener('change', function (event) {
 
 
+      let $selectedState = $usStatesContainer.value;
 
-
-    console.log(event.target)
-    console.log($usStatesContainer.value);
+      let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=" + $selectedState + "&radius=10&activity=CAMPING&lastupdated=10-01-2018&apikey=ad1485d4-8c3a-403d-8244-10d0d8498353";
 
     fetch(url).then(function (response) {
       if (response.ok) {
         response.json().then(function (data) {
           console.log(data.RECDATA);
+          
+           while ($campsiteContainer.hasChildNodes()) {
+              $campsiteContainer.removeChild($campsiteContainer.firstChild);
+            }
 
           for (i = 0; i < data.RECDATA.length; i++) {
             let $campsiteCard = document.createElement("div");
@@ -150,9 +150,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       };
     });
-  })
+  });
+           
 
 
+
+    let rditurl = "https://www.reddit.com/r/CampFireStories.json?limit=5"
+    let $rditContainer = document.getElementById("campstory-container");
+
+    fetch(rditurl).then(function (response) {
+      if (response.ok) {
+        response.json().then(function (data) {
+          console.log(data.data.children);
+
+          for (i = 0; i < data.data.children.length; i++) {
+            let $rditCard = document.createElement("div")
+            $rditCard.classList = ("card my-1");
+
+            let $rditName = document.createElement("h3");
+            $rditName.classList = ("card-header-title");
+            $rditName.textContent = data.data.children[i].data.title;
+
+            let $rditDescription = document.createElement("p");
+            $rditDescription.classList = ("card-content");
+            $rditDescription.innerHTML = data.data.children[i].data.selftext;
+
+            $rditCard.appendChild($rditName);
+            $rditCard.appendChild($rditDescription);
+            $rditContainer.appendChild($rditCard);
+          };
+        });
+      };
+    });
+
+  });
 });
-
-
