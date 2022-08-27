@@ -39,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.ok) {
           response.json().then(function (data) {
             console.log(data.RECDATA);
+            
+            while ($campsiteContainer.hasChildNodes()) {
+              $campsiteContainer.removeChild($campsiteContainer.firstChild);
+            }
 
             for (i = 0; i < data.RECDATA.length; i++) {
               let $campsiteCard = document.createElement("div")
               $campsiteCard.classList = ("card my-1");
-
-              while ($campsiteContainer.hasChildNodes()) {
-                $campsiteContainer.removeChild($campsiteContainer.firstChild);
-              }
 
               let $campsiteName = document.createElement("h3");
               $campsiteName.classList = ("card-header-title");
