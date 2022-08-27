@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
            while ($campsiteContainer.hasChildNodes()) {
               $campsiteContainer.removeChild($campsiteContainer.firstChild);
             }
+            while ($modalContainer.hasChildNodes()) {
+              $modalContainer.removeChild($modalContainer.firstChild);
+            }
 
           for (i = 0; i < data.RECDATA.length; i++) {
             let $campsiteCard = document.createElement("div");
