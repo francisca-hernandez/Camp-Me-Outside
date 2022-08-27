@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
               let $campsiteCard = document.createElement("div")
               $campsiteCard.classList = ("card my-1");
 
+              while ($campsiteContainer.hasChildNodes()) {
+                $campsiteContainer.removeChild($campsiteContainer.firstChild);
+              }
+
               let $campsiteName = document.createElement("h3");
               $campsiteName.classList = ("card-header-title");
               $campsiteName.textContent = data.RECDATA[i].FacilityName;
