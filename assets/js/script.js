@@ -54,17 +54,21 @@ document.addEventListener('DOMContentLoaded', () => {
             
             $modalContainer.appendChild($campsiteCard);
 
+            // create div to set background within modal
             let $modalBackground = document.createElement("div");
             $modalBackground.classList = ("modal-background");
             $campsiteCard.appendChild($modalBackground);
 
+            // create div to hold all card items
             let $modalCard = document.createElement("div");
             $modalCard.classList = ("modal-card");
             $campsiteCard.appendChild($modalCard);
 
+            // create div to contain header and description
             let $modalContentContainer = document.createElement("div");
             $modalContentContainer.classList = ("modal-card");
 
+            // create header
             let $modalCardHeader = document.createElement("header");
             $modalCardHeader.classList = ("modal-card-head")
 
@@ -72,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             $modalCardTitle.classList = ("modal-card-title");
             $modalCardTitle.textContent = data.RECDATA[i].FacilityName;
 
+            // create description
             let $modalDescriptionContainer = document.createElement("section");
             $modalDescriptionContainer.classList = ("modal-card-body");
             
@@ -79,15 +84,18 @@ document.addEventListener('DOMContentLoaded', () => {
             $modalDescriptionText.innerHTML = data.RECDATA[i].FacilityDescription;
             $modalDescriptionContainer.appendChild($modalDescriptionText);
 
+            // append information into card
             $modalCardHeader.appendChild($modalCardTitle);
             $modalCard.appendChild($modalCardHeader);
             $modalCard.appendChild($modalDescriptionContainer);
 
+            // create button to display on page when clicked
             let $modalTargetButton = document.createElement("button");
             $modalTargetButton.classList = ("js-modal-trigger button is-primary");
             $modalTargetButton.setAttribute("data-target", $campsiteCard.id)
             $modalTargetButton.textContent = data.RECDATA[i].FacilityName;
 
+            // append button to page
             $campsiteContainer.appendChild($modalTargetButton);
 
 
