@@ -24,44 +24,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&apikey=ad1485d4-8c3a-403d-8244-10d0d8498353";
   let $campsiteContainer = document.getElementById("campsite-container");
+  let $usStatesContainer = document.querySelector("#us-states-container");
+ 
+// event listener for when options are changed
+  $usStatesContainer.addEventListener('change', function(event) {
+
+    let $selectedState = $usStatesContainer.value;
+
+    let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=" + $selectedState + "&radius=10&activity=CAMPING&lastupdated=10-01-2018&apikey=ad1485d4-8c3a-403d-8244-10d0d8498353";
+    
+    
+
+
+    console.log(event.target)
+    console.log($usStatesContainer.value);
+
+    fetch(url).then(function(response) {
+      if (response.ok) {
+        response.json().then(function(data) {
+          console.log(data.RECDATA);
+  
+          for (i = 0; i < data.RECDATA.length; i++) {
+            let $campsiteCard = document.createElement("div")
+            $campsiteCard.classList = ("card my-1");
+  
+            let $campsiteName = document.createElement("h3");
+            $campsiteName.classList = ("card-header-title");
+            $campsiteName.textContent = data.RECDATA[i].FacilityName;
+         
+            let $campsiteDescription = document.createElement("p");
+            $campsiteDescription.classList = ("card-content");
+            $campsiteDescription.innerHTML = data.RECDATA[i].FacilityDescription;
+  
+            $campsiteCard.appendChild($campsiteName);
+            $campsiteCard.appendChild($campsiteDescription);
+            $campsiteContainer.appendChild($campsiteCard);
+  
+            
+            // $campsiteCard.id = ("modal" + [i]);
+            // $campsiteCard.classList = ("modal");
+  
+            // $modalContainer.appendChild($campsiteCard);
+  
+            
+            
+  
+  
+          };
+        });
+      };
+    });
+  })
+
+
   let $modalContainer = document.querySelector(".modal-container");
 
 
-  fetch(url).then(function(response) {
-    if (response.ok) {
-      response.json().then(function(data) {
-        console.log(data.RECDATA);
-
-        for (i = 0; i < data.RECDATA.length; i++) {
-          let $campsiteCard = document.createElement("div")
-          $campsiteCard.classList = ("card my-1");
-
-          let $campsiteName = document.createElement("h3");
-          $campsiteName.classList = ("card-header-title");
-          $campsiteName.textContent = data.RECDATA[i].FacilityName;
-       
-          let $campsiteDescription = document.createElement("p");
-          $campsiteDescription.classList = ("card-content");
-          $campsiteDescription.innerHTML = data.RECDATA[i].FacilityDescription;
-
-          $campsiteCard.appendChild($campsiteName);
-          $campsiteCard.appendChild($campsiteDescription);
-          $campsiteContainer.appendChild($campsiteCard);
-
-          
-          // $campsiteCard.id = ("modal" + [i]);
-          // $campsiteCard.classList = ("modal");
-
-          // $modalContainer.appendChild($campsiteCard);
-
-          
-          
 
 
-        };
-      });
-    };
   });
 
-  });
 
