@@ -47,19 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
           for (i = 0; i < data.RECDATA.length; i++) {
             let $campsiteCard = document.createElement("div");
-            // $campsiteCard.classList = ("card my-1");
-
-            // let $campsiteName = document.createElement("h3");
-            // $campsiteName.classList = ("card-header-title");
-            // $campsiteName.textContent = data.RECDATA[i].FacilityName;
-
-            // let $campsiteDescription = document.createElement("p");
-            // $campsiteDescription.classList = ("card-content");
-            // $campsiteDescription.innerHTML = data.RECDATA[i].FacilityDescription;
-
-            // $campsiteCard.appendChild($campsiteName);
-            // $campsiteCard.appendChild($campsiteDescription);
-            // $campsiteContainer.appendChild($campsiteCard);
 
             // create modal div within modal container
             $campsiteCard.id = ("modal" + [i]);
@@ -71,6 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
             $modalBackground.classList = ("modal-background");
             $campsiteCard.appendChild($modalBackground);
 
+            let $modalCard = document.createElement("div");
+            $modalCard.classList = ("modal-card");
+            $campsiteCard.appendChild($modalCard);
+
             let $modalContentContainer = document.createElement("div");
             $modalContentContainer.classList = ("modal-card");
 
@@ -81,8 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
             $modalCardTitle.classList = ("modal-card-title");
             $modalCardTitle.textContent = data.RECDATA[i].FacilityName;
 
+            let $modalDescriptionContainer = document.createElement("section");
+            $modalDescriptionContainer.classList = ("modal-card-body");
+            
+            let $modalDescriptionText = document.createElement("p");
+            $modalDescriptionText.innerHTML = data.RECDATA[i].FacilityDescription;
+            $modalDescriptionContainer.appendChild($modalDescriptionText);
+
             $modalCardHeader.appendChild($modalCardTitle);
-            $campsiteCard.appendChild($modalCardHeader);
+            $modalCard.appendChild($modalCardHeader);
+            $modalCard.appendChild($modalDescriptionContainer);
 
             let $modalTargetButton = document.createElement("button");
             $modalTargetButton.classList = ("js-modal-trigger button is-primary");
