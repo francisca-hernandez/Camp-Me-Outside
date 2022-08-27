@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   let rditurl = "https://www.reddit.com/r/CampFireStories.json?limit=5"
-  let $rditContainer = document.getElementById("reddit-container");
+  let $rditContainer = document.getElementById("campstory-container");
 
   fetch(rditurl).then(function (response) {
     if (response.ok) {
