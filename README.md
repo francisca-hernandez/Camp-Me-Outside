@@ -35,7 +35,6 @@
 <!-- Link -->
 
 This site was build using [Github Pages]()
- 
-## Contributers
 
+## Contributers
 
