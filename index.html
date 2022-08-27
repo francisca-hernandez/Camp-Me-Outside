@@ -1,23 +1,200 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampMeOutside</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/camp.ico">
+</head>
+
+<body>
+  <section class="hero is-medium">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item">
+                Campsites
+              </a>
+              <a class="navbar-item">
+                Campfire Stories
+              </a>
+              <span class="navbar-item">
+
+                <a href="inprogress.html" class="button">
+              <span>
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Book A Campsite</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          CampMeOutside
+        </p>
+
+    
+        <!-- State Drop Down -->
+        <div class="field">
+          <p class="control has-icons-left">
+            <span class="select">
+              <select id="us-states-container">
+                <option id="us-states" selected>Select a State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+
+              </select>
+            </span>
+            <span class="icon is-small is-left">
+              <i class="fas fa-globe mdi mdi-dark"></i>
+            </span>
+          </p>
+        </div>
+      </div>
   </section>
+  </section>
+  
+  <!-- Nav Bar with Drop Down Menus -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <a class="navbar-item">
+      <h2>About Us</h2>
+    </a>
+
+    <div class="navbar-item has-dropdown is-hoverable" id="safety">
+      <a class="navbar-link">
+        <h2>Safety Information</h2>
+      </a>
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Fire Information
+        </a>
+
+        <a class="navbar-item">
+          General Camping Safety Guidlines
+        </a>
+      </div>
+    </div>
+    <div class="navbar-item has-dropdown is-hoverable" id="more">
+      <a class="navbar-link">
+        <h2>More</h2>
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Camp Songs
+        </a>
+        <a class="navbar-item">
+          Jokes to Tell Around the Fire
+        </a>
+        <a class="navbar-item">
+          Outdoor Activites
+        </a>
+        <hr class="navbar-divider">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Beginning of container to hold the two columns -->
+  <section class="columns">
+    <!-- campsite container -->
+    <section class="column is-mobile mx-2">
+      <h2 class="api-head">Campsites</h2>
+    </section>
+
+    <!-- campstory container -->
+    <section class="column is-mobile mx-2">
+      <h2 class="api-head">Campfire Stories</h2>
+    </section>
+
+  </section>
+  <section class="columns">
+    <!-- campsite container -->
+    <section class="column is-mobile mx-2" id="campsite-container">
+      
+    </section>
+
+    <!-- campstory container -->
+    <section class="column is-mobile mx-2" id="campstory-container">
+    
+    </section>
+
+  </section>
+
+
+  <div class="modal-container">
+
+  </div>
+
   <script src="assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>

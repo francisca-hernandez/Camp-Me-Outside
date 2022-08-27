@@ -1,24 +1,40 @@
-# Campside-Stories
-Campsite locator and fireside story generator
+# CampMeOutside 
+
+## Project Description
+
+* Campsite locator and fireside story generator
+
+## User Story
+
+* 
+
+## Acceptance Criteria
+
+* 
+
+## How to Install and Run the Project
+ 
+ 
+## How to Use 
+ 
+ 
+## Built Using
+
+* 
 
 
-##Project Description
- 
- 
-##Acceptance Criteria
- 
+## Assets 
 
-##User Story
- 
- 
- ##How to Install and Run the Project
- 
- 
- ##How to Use 
- 
- 
- ##Built with
- 
- 
- ##Contributers
-  test git
+### Screenshot 
+
+<!-- Make sure to resize the pictures so they fit appropriately  -->
+![](./assets/####)
+
+### Link to Deployed Application
+
+<!-- Link -->
+
+This site was build using [Github Pages]()
+
+## Contributers
+
