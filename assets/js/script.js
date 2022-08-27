@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
   // Add a click event on each of them
-  $navbarBurgers.forEach( el => {
+  $navbarBurgers.forEach(el => {
     el.addEventListener('click', () => {
 
       // Get the target from the "data-target" attribute
@@ -19,48 +19,72 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&apikey=ad1485d4-8c3a-403d-8244-10d0d8498353";
+  let $campsiteContainer = document.getElementById("campsite-container");
+  let $modalContainer = document.querySelector(".modal-container");
+
+  fetch(url).then(function (response) {
+    if (response.ok) {
+      response.json().then(function (data) {
+        console.log(data.RECDATA);
+
+        for (i = 0; i < data.RECDATA.length; i++) {
+          let $campsiteCard = document.createElement("div")
+          $campsiteCard.classList = ("card my-1");
+
+          let $campsiteName = document.createElement("h3");
+          $campsiteName.classList = ("card-header-title");
+          $campsiteName.textContent = data.RECDATA[i].FacilityName;
+
+          let $campsiteDescription = document.createElement("p");
+          $campsiteDescription.classList = ("card-content");
+          $campsiteDescription.innerHTML = data.RECDATA[i].FacilityDescription;
+
+          $campsiteCard.appendChild($campsiteName);
+          $campsiteCard.appendChild($campsiteDescription);
+          $campsiteContainer.appendChild($campsiteCard);
 
 
-let url = "https://ridb.recreation.gov/api/v1/facilities?limit=5&offset=0&state=WA&radius=10&activity=CAMPING&lastupdated=10-01-2018&apikey=ad1485d4-8c3a-403d-8244-10d0d8498353";
-let $campsiteContainer = document.getElementById("campsite-container");
-let $modalContainer = document.querySelector(".modal-container");
+          // $campsiteCard.id = ("modal" + [i]);
+          // $campsiteCard.classList = ("modal");
+
+          // $modalContainer.appendChild($campsiteCard);
 
 
-fetch(url).then(function(response) {
-  if (response.ok) {
-    response.json().then(function(data) {
-      console.log(data.RECDATA);
-
-      for (i = 0; i < data.RECDATA.length; i++) {
-        let $campsiteCard = document.createElement("div")
-        $campsiteCard.classList = ("card my-1");
-
-        let $campsiteName = document.createElement("h3");
-        $campsiteName.classList = ("card-header-title");
-        $campsiteName.textContent = data.RECDATA[i].FacilityName;
-     
-        let $campsiteDescription = document.createElement("p");
-        $campsiteDescription.classList = ("card-content");
-        $campsiteDescription.innerHTML = data.RECDATA[i].FacilityDescription;
-
-        $campsiteCard.appendChild($campsiteName);
-        $campsiteCard.appendChild($campsiteDescription);
-        $campsiteContainer.appendChild($campsiteCard);
-
-        
-        // $campsiteCard.id = ("modal" + [i]);
-        // $campsiteCard.classList = ("modal");
-
-        // $modalContainer.appendChild($campsiteCard);
-
-        
-        
 
 
-      };
-    });
-  };
+
+        };
+      });
+    };
+  });
+
+  let rditurl = "https://www.reddit.com/r/CampFireStories.json?limit=5"
+  let $rditContainer = document.getElementById("reddit-container");
+
+  fetch(rditurl).then(function (response) {
+    if (response.ok) {
+      response.json().then(function (data) {
+        console.log(data.data.children);
+           
+        for (i = 0; i < data.data.children.length; i++) {
+          let $rditCard = document.createElement("div")
+          $rditCard.classList = ("card my-1");
+
+          let $rditName = document.createElement("h3");
+          $rditName.classList = ("card-header-title");
+          $rditName.textContent = data.data.children[i].data.title;
+
+          let $rditDescription = document.createElement("p");
+          $rditDescription.classList = ("card-content");
+          $rditDescription.innerHTML = data.data.children[i].data.selftext;
+
+          $rditCard.appendChild($rditName);
+          $rditCard.appendChild($rditDescription);
+          $rditContainer.appendChild($rditCard);
+        };
+      });
+    };
+  });
+
 });
-
-});
-
