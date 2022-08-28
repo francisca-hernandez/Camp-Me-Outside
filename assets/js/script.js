@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //API for reddit
 
-  let rditurl = "https://www.reddit.com/r/CampFireStories.json?limit=5"
+  let rditurl = "https://www.reddit.com/r/CampFireStories.json?limit=20"
   let $rditContainer = document.getElementById("campstory-container");
   let $rditModalContainer = document.querySelector(".modal-container");
 
