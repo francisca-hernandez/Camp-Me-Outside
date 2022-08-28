@@ -1,0 +1,18 @@
+body {
+    background-image: url("../images/heroBG7.jpg");
+    background-size: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    width: (width of image);
+    height: (height of image 400);
+    overflow: hidden;
+
+}
+
+h1 {
+    color: darkgoldenrod;
+    font-size: 30pt
+}
+
