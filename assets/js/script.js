@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
           let $rditCard = document.createElement("div")
 
           // create modal div within modal container
-          $rditCard.id = ("modal" + [i]);
+          $rditCard.id = ("modal" + [i] + 5);
           $rditCard.classList = ("modal");
 
           $rditModalContainer.appendChild($rditCard);
