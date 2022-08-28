@@ -311,6 +311,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
   };
-
+  // event listener is going to be what calls this function to append the page.
   pullFavoriteCampsite();
 });
