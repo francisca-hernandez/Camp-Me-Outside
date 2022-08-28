@@ -79,6 +79,29 @@ document.addEventListener('DOMContentLoaded', () => {
             $modalCardTitle.classList = ("modal-card-title");
             $modalCardTitle.textContent = data.RECDATA[i].FacilityName;
 
+
+
+            // save work
+
+
+
+            let $modalSaveButton = document.createElement("button");
+            $modalSaveButton.classList = ("button is-link");
+            $modalSaveButton.setAttribute("id", "campsite-save-button" + [i]);
+            $modalSaveButton.textContent = "Favorite";
+
+            let $facilityId = data.RECDATA[i].FacilityID;
+
+            $modalSaveButton.addEventListener("click", function () {
+              console.log($facilityId);
+              localStorage.setItem("facility-id", $facilityId);
+            });
+
+
+
+
+
+
             // create description
             let $modalDescriptionContainer = document.createElement("section");
             $modalDescriptionContainer.classList = ("modal-card-body");
@@ -89,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // append information into card
             $modalCardHeader.appendChild($modalCardTitle);
+            $modalCardHeader.appendChild($modalSaveButton);
             $modalCard.appendChild($modalCardHeader);
             $modalCard.appendChild($modalDescriptionContainer);
 
@@ -278,4 +302,27 @@ document.addEventListener('DOMContentLoaded', () => {
       $rditModalContainer.removeChild($rditModalContainer.firstChild);
     }
   });
+
+  // function to pull from local storage
+
+  var pullFavoriteCampsite = function () {
+    let $storageFacilityId = localStorage.getItem("facility-id")
+    console.log($storageFacilityId);
+
+    let $storageUrl = "https://ridb.recreation.gov/api/v1/facilities/" + $storageFacilityId + "?full=true&apikey=ad1485d4-8c3a-403d-8244-10d0d8498353";
+    fetch($storageUrl).then(function (response) {
+      if (response.ok) {
+        response.json().then(function (data) {
+          console.log(data);
+          
+
+          // begin dynamically creating elements with data
+
+        })
+      }
+    })
+
+  };
+  // event listener is going to be what calls this function to append the page.
+  pullFavoriteCampsite();
 });
