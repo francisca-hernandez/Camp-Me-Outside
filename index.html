@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CampMeOutside</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/x-icon" href="assets/images/camp.ico">
 </head>
@@ -55,12 +56,13 @@
 
     
         <!-- State Drop Down -->
-        <div class="field">
-          <p class="control has-icons-left">
+        <div class="control has-icons-left">
+          <div class="select">
             <!-- Create Icon in States navbar - The one used at the top of the page ideally -->
-            <span class="select">
               <select id="us-states-container">
-                <option id="us-states" selected>Select a State</option>
+                <option id="us-states" selected>
+
+                  Select a State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -112,13 +114,8 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
-
               </select>
-            </span>
-            <span class="icon is-small is-left">
-              <i class="fas fa-globe mdi mdi-dark"></i>
-            </span>
-          </p>
+           </div>
         </div>
       </div>
   </section>

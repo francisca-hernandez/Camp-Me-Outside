@@ -2,7 +2,7 @@
 .title {
     font-weight: 900;
     font-size: 40pt;
-    color: white;
+    color: darkgoldenrod;
 }
 
 /* Hero Section */
@@ -32,6 +32,9 @@ a.button {
     border-color: rgb(9, 77, 9);
     color:rgb(221, 122, 41);
 }
+.fa-github:before {
+    content: none;
+}
 .button:hover {
     color: rgb(221, 122, 41);
     background-color:rgb(9, 77, 9);
@@ -39,6 +42,9 @@ a.button {
 }
 
 /* US state search bar */
+.control.has-icons-left .select select {
+    content: icon;
+}
 
 /* Campsites API */
 h2.api-head {
