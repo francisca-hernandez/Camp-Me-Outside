@@ -2,16 +2,17 @@
 .title {
     font-weight: 900;
     font-size: 40pt;
-    color: white;
+    color: darkgoldenrod;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url("../images/heroBG5.jpg");
+    background-image: url("../images/heroBG11.jpg");
      /* background-size: cover; */
     background-position: center;
     position: relative;
 }
+
 .navbar-end {
     background-color:transparent;
 }
