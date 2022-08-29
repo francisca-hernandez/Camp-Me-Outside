@@ -5,12 +5,13 @@
     color: darkgoldenrod;
 }
 
-/* Hero Section */
+/* Hero Section with navbar */
 .hero {
     background-image: url("../images/heroBG11.jpg");
-     /* background-size: cover; */
+    background-size: cover;
     background-position: center;
     position: relative;
+    height: 500px;
 }
 
 .navbar-end {
@@ -32,13 +33,16 @@ a.button {
     background-color:rgb(9, 77, 9);
     border-color: rgb(9, 77, 9);
     color:rgb(221, 122, 41);
+    margin: 0;
 }
 .button:hover {
     color: rgb(221, 122, 41);
     background-color:rgb(9, 77, 9);
     border-color: rgb(221, 122, 41);
 }
-
+a.navbar-link h2 {
+    color: #4a4a4a;
+}
 /* US state search bar */
 
 /* Campsites API */
@@ -46,9 +50,27 @@ h2.api-head {
     text-align: center;
     font-size: 16pt;
     color: rgb(9, 77, 9);
+    text-decoration: underline;
 }
 h2 {
     font-size: 16px;
     font-weight: bold;
+}
+/* Column Styles */
+sections.columns {
+    table-layout: fixed;
+    display: inline-block;
+}
+.button {
+    white-space: pre-wrap;
+    padding: 3px;
+    background-color: rgb(221, 122, 41);
+    border: 1px 1px solid rgb(221, 122, 41);
+    margin: 15px 0px;
+    color: rgb(9, 77, 9);
+    font-weight: bold;
 
 }
+/* Buttons for campsites and campfire stories */
+
+
