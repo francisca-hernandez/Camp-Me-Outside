@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 body,html {
     background-image: url("../images/heroBG2.jpg");
+=======
+body, html {
+    background-image: url("../images/BG5.jpg");
+>>>>>>> 702236ba1ebe8e51d1c19da623fc41dd028e18cb
     background-size: cover;
     position: fixed;
     height: 100%;
@@ -33,13 +38,7 @@ h4 {
     margin-top: 100px;
 }
 
-/* button.button {
-    float: unset;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
+/* Button Styling */
 button.button {
 
     background-color: darkgoldenrod;

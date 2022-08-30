@@ -25,19 +25,24 @@
             </span>
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
-            <span class="navbar-end">
-              <a id="saved-campsites" class="navbar-item" href="inprogress.html">
-                Campsites
-              </a>
-              <a class="navbar-item" href="inprogress.html">
-                <img >Campfire Stories
-              </a>
-              <span class="navbar-item">
+            <span class="navbar-item">
 
-                <a href="inprogress.html" class="button">
-                  <span>Book A Campsite</span>
-                </a>
-              </span>
+              <a href="inprogress.html" class="fav">
+                <span>Campsites <i class="fa fa-regular fa-star"></i></span>
+              </a>
+            </span>
+
+            <span class="navbar-item">
+
+              <a href="inprogress.html" class="fav">
+                <span>Campfire Stories <i class="fa fa-regular fa-star"></i></span>
+              </a>
+            </span>
+            <span class="navbar-item">
+
+              <a href="inprogress.html" class="button is-rounded">
+                <span>Book A Campsite</span>
+              </a>
             </span>
           </div>
         </div>
@@ -54,14 +59,12 @@
 
         <!-- State Drop Down -->
         <div class="control has-icons-left">
-            <h1 id="where">Select your destination:</h1>
-            <br>
-            <div class="select">
+          <h1 id="where">Select your destination:</h1>
+          <br>
+          <div class="select is-rounded">
             <!-- Create Icon in States navbar - The one used at the top of the page ideally -->
             <select id="us-states-container">
-              <option id="us-states" selected>
-
-                Select a State</option>
+              <option id="us-states" selected>Select a State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -114,14 +117,16 @@
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
             </select>
+            <!-- <span class="fa fa-stack icon is-small is-left fa-solid fa-campground"></span> -->
           </div>
+          
         </div>
       </div>
   </section>
   </section>
 
   <!-- Nav Bar with Drop Down Menus -->
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav id="dropdown" class="navbar" role="navigation" aria-label="main navigation">
     <a class="navbar-item" href="aboutme.html">
       <h2>About Us</h2>
     </a>
