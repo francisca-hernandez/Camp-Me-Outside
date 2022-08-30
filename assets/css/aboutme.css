@@ -1,5 +1,5 @@
 body, html {
-    background-image: url("../images/heroBG2.jpg");
+    background-image: url("../images/BG5.jpg");
     background-size: cover;
     position: fixed;
     height: 100%;
@@ -25,13 +25,7 @@ h2 {
     color:gainsboro
 }
 
-/* button.button {
-    float: unset;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
+/* Button Styling */
 button.button {
 font-family: inherit; 
   font-size: 100%; 
