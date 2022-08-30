@@ -1,4 +1,6 @@
+
 /* background image */
+
 body, html {
     background-image: url("../images/heroBG7.jpg");
     background-size: cover;
@@ -8,6 +10,7 @@ body, html {
     margin: 0;
     padding: 0;
    background-attachment:unset;
+
 }
 
 /* In Progress */
@@ -24,12 +27,12 @@ h1 {
 
 /* Homepage button */
 button.button {
-
     float: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     background-color: rgb(223, 177, 62);
     margin-top: 105px;
     width: 10%;
@@ -38,7 +41,5 @@ button.button {
     font-size: 16px;
     cursor: pointer;
     
-    
-
 }
  

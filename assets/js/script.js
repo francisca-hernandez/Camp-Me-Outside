@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // create button to display on page when clicked
             let $modalTargetButton = document.createElement("button");
-            $modalTargetButton.classList = ("js-modal-trigger button is-primary");
+            $modalTargetButton.classList = ("js-modal-trigger button is-fullwidth is-responsive");
             $modalTargetButton.setAttribute("data-target", $campsiteCard.id)
             $modalTargetButton.textContent = data.RECDATA[i].FacilityName;
 
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // create button to display on page when clicked
             let $modalTargetButton = document.createElement("button");
-            $modalTargetButton.classList = ("js-modal-trigger button is-primary");
+            $modalTargetButton.classList = ("js-modal-trigger button is-fullwidth is-responsive");
             $modalTargetButton.setAttribute("data-target", $rditCard.id)
             $modalTargetButton.textContent = data.data.children[i].data.title;
 

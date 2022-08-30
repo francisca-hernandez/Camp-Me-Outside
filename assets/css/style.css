@@ -2,27 +2,30 @@
 .title {
     font-weight: 900;
     font-size: 40pt;
-    color: darkgoldenrod;
+    color: goldenrod;
 }
 
-/* Hero Section */
+/* Hero Section with navbar */
 .hero {
-    background-image: url("../images/heroBG11.jpg");
-     /* background-size: cover; */
+    background-image: url("../images/heroBG7.jpg");
+    background-size: cover;
     background-position: center;
     position: relative;
+    height: 500px;
 }
 
 .navbar-end {
     background-color:transparent;
 }
 a.navbar-item:hover {
-    color:rgb(221, 122, 41);
+    color:goldenrod;
     background-color: rgb(9, 77, 9);
     border-radius: 4px;
+    position: static;
+    padding: 3px;
 }
 .navbar-item {
-    color:rgb(221, 122, 41);
+    color:goldenrod;
     font-weight: bold;
 }
 .navbar-burger {
@@ -31,24 +34,51 @@ a.navbar-item:hover {
 a.button {
     background-color:rgb(9, 77, 9);
     border-color: rgb(9, 77, 9);
-    color:rgb(221, 122, 41);
+    color:goldenrod;
+    margin: 0;
 }
 .button:hover {
-    color: rgb(221, 122, 41);
+    color: goldenrod;
     background-color:rgb(9, 77, 9);
-    border-color: rgb(221, 122, 41);
+    border-color: goldenrod;
 }
-
+a.navbar-link h2 {
+    color: #4a4a4a;
+}
 /* US state search bar */
-
+h1#where {
+    font-size: 16pt;
+    text-align: center;
+    color: white;
+}
 /* Campsites API */
 h2.api-head {
     text-align: center;
     font-size: 16pt;
     color: rgb(9, 77, 9);
+    text-decoration: underline;
 }
 h2 {
     font-size: 16px;
     font-weight: bold;
+}
+/* Column Styles */
+sections.columns {
+    table-layout: fixed;
+    display: inline-block;
+}
+.button {
+    white-space: pre-wrap;
+    padding: 3px;
+    background-color: goldenrod;
+    border: 1px 1px solid goldenrod;
+    margin: 15px 0px;
+    color: rgb(9, 77, 9);
+    font-weight: bold;
 
 }
+/* Background color for behing where the tiles are */
+
+/* Buttons for campsites and campfire stories */
+
+
