@@ -1,4 +1,4 @@
-body, html {
+body,html {
     background-image: url("../images/heroBG2.jpg");
     background-size: cover;
     position: fixed;
@@ -6,23 +6,31 @@ body, html {
     width: 100%;
     margin: 0;
     padding: 0;
-    
+
 }
 
 h1 {
-    color: rgb(223, 177, 62);
+    color: darkgoldenrod;
     width: 100%;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     display: flex;
     position: static;
     align-items: center;
     justify-content: center;
     font-size: 400%;
 }
+
 h2 {
     text-align: center;
     font-size: 35px;
-    color:gainsboro
+    color: rgb(190, 182, 182)
+}
+
+h4 {
+    text-align: center;
+    font-size: 35px;
+    color:rgb(34, 34, 34);
+    margin-top: 100px;
 }
 
 /* button.button {
@@ -33,13 +41,28 @@ h2 {
     transform: translate(-50%, -50%);
 } */
 button.button {
-font-family: inherit; 
-  font-size: 100%; 
-  line-height: 1.15; 
-  overflow: visible;
-  text-align: center;
-  margin: auto;
-  display:flex;
-  justify-content: center;
-  display: grid;
+
+    background-color: darkgoldenrod;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    overflow: visible;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    border: none;
+    padding: 8px 10px;
 }
+
+
+span.title {
+    text-align:center;
+    color:goldenrod;
+    margin-top: 150px;
+    margin-bottom:70px;
+    font-size: 35px;
+}
+   
+ 

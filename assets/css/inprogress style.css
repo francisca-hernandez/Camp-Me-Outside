@@ -9,7 +9,7 @@ body, html {
     width: 100%;
     margin: 0;
     padding: 0;
-   background-attachment:unset;
+   background-attachment:fixed;
 
 }
 
@@ -32,14 +32,14 @@ button.button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     background-color: rgb(223, 177, 62);
     margin-top: 105px;
     width: 10%;
     border: none;
-    padding: 10px 10px;
+    padding: 8px 10px;
     font-size: 16px;
     cursor: pointer;
     
 }
  
+
