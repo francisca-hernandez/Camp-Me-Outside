@@ -1,0 +1,76 @@
+
+
+body, html {
+    background-image: url("../images/BG5.jpg");
+
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    color: darkgoldenrod;
+    width: 100%;
+    /* text-decoration: underline; */
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    font-size: 400%;
+}
+
+p {color: darkgoldenrod;
+    width: 100%;
+    /* text-decoration: underline; */
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+
+
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(41, 40, 40)
+}
+
+h4 {
+    text-align: center;
+    font-size: 35px;
+    color:rgb(34, 34, 34);
+    margin-top: 100px;
+}
+
+/* Button Styling */
+button.button {
+
+    background-color: darkgoldenrod;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    overflow: visible;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    border: none;
+    padding: 8px 10px;
+}
+
+
+span.title {
+    text-align:center;
+    color:goldenrod;
+    margin-top: 150px;
+    margin-bottom:70px;
+    font-size: 35px;
+}
+   
+ 
