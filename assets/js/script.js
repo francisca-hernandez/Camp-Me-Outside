@@ -118,8 +118,8 @@ $usStatesContainer.addEventListener('change', function (event) {
           $modalDescriptionContainer.appendChild($modalDescriptionText);
 
           // append information into card
-          $modalCardHeader.appendChild($modalCardTitle);
           $modalCardHeader.appendChild($modalSaveButton);
+          $modalCardHeader.appendChild($modalCardTitle);
           $modalCard.appendChild($modalCardHeader);
           $modalCard.appendChild($modalDescriptionContainer);
 
