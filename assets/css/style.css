@@ -6,7 +6,7 @@
 }
 
 /* Hero Section with navbar */
-.hero {
+.hero , body {
     background-image: url("../images/heroBG7.jpg");
     background-size: cover;
     background-position: center;
@@ -15,70 +15,93 @@
 }
 
 .navbar-end {
-    background-color:transparent;
+    background-color: transparent;
 }
+
 a.navbar-item:hover {
-    color:goldenrod;
-    background-color: rgb(9, 77, 9);
+    color: darkcyan;
     border-radius: 4px;
     position: static;
     padding: 3px;
 }
+
 .navbar-item {
-    color:goldenrod;
+    color: rgb(9, 77, 9);
     font-weight: bold;
 }
+
 .navbar-burger {
     color: white;
+    font-weight: bold;
 }
+/* Top Page button styling */
 a.button {
-    background-color:rgb(9, 77, 9);
-    border-color: rgb(9, 77, 9);
+    background-color: saddlebrown;
+    border-color:saddlebrown;
+    color: goldenrod;
+    margin: 0 auto;
+}
+a.fav {
+    color: saddlebrown;
+    font-size: 18px;
+}
+.fa-star:before {
     color:goldenrod;
-    margin: 0;
 }
 .button:hover {
-    color: goldenrod;
-    background-color:rgb(9, 77, 9);
-    border-color: goldenrod;
+    color: saddlebrown;
+    background-color: goldenrod
+}
+
+div#navbarMenuHeroA.navbar-menu {
+    align-items: stretch;
+    justify-content: flex-end;
+}
+nav#dropdown.navbar {
+    align-items: stretch;
+    justify-content: flex-start;
 }
 a.navbar-link h2 {
-    color: #4a4a4a;
+    color: saddlebrown;
 }
+
 /* US state search bar */
 h1#where {
     font-size: 16pt;
     text-align: center;
     color: white;
+    font-weight: 400;
 }
+
 /* Campsites API */
 h2.api-head {
     text-align: center;
-    font-size: 16pt;
+    font-size: 18pt;
     color: rgb(9, 77, 9);
     text-decoration: underline;
 }
+
 h2 {
     font-size: 16px;
     font-weight: bold;
 }
+
 /* Column Styles */
 sections.columns {
     table-layout: fixed;
     display: inline-block;
 }
-.button {
+
+ .button {
     white-space: pre-wrap;
     padding: 3px;
-    background-color: goldenrod;
     border: 1px 1px solid goldenrod;
     margin: 15px 0px;
-    color: rgb(9, 77, 9);
     font-weight: bold;
+    height: fit-content;
 
-}
+} 
+
 /* Background color for behing where the tiles are */
 
 /* Buttons for campsites and campfire stories */
-
-
