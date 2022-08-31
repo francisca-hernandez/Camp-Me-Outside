@@ -29,13 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
   let $modalContainer = document.querySelector(".modal-container");
   let $favoriteCampsites = document.querySelector("#favorite-Campsites");
   const storedFavs = JSON.parse(localStorage.getItem("facility-id"));
-  const favCampsites = [];
-  for (var i = 0; i < storedFavs.length; i++) {
-    console.log(storedFavs[i]);
-    favCampsites.push(storedFavs[i])
-    localStorage.setItem("facility-id", JSON.stringify(favCampsites));
+  console.log(storedFavs)
+  function contains(storedFavs, obj) {
+    for (var i = 0; i < storedFavs.length; i++) {
+      if (storedFavs[i] === obj) {
+        console.log(storedFavs[i]);
+        favCampsites.push(storedFavs[i])
+        localStorage.setItem("facility-id", JSON.stringify(favCampsites));
+      }
+    }
+    return false
   }
-
   // event listener for when options are changed
   $usStatesContainer.addEventListener('change', function (event) {
 
@@ -327,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(storedFavs[i]);
 
       let $storageUrl = "https://ridb.recreation.gov/api/v1/facilities/" + storedFavs[i] + "?full=true&apikey=ad1485d4-8c3a-403d-8244-10d0d8498353";
-      
+
       fetch($storageUrl).then(function (response) {
         if (response.ok) {
           response.json().then(function (data) {
@@ -369,7 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             // need to change to remove favorite.
-          
+
 
 
             let $modalSaveButton = document.createElement("button");
