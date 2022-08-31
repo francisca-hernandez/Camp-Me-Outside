@@ -1,76 +1,60 @@
-
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 body, html {
     background-image: url("../images/BG5.jpg");
-
     background-size: cover;
-    position: fixed;
+    /* position: fixed; */
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 h1 {
-    color: darkgoldenrod;
+    color: rgb(223, 177, 62);
     width: 100%;
-    /* text-decoration: underline; */
+    text-decoration: underline;
     display: flex;
     position: static;
     align-items: center;
     justify-content: center;
-    font-size: 400%;
-}
-
-p {color: darkgoldenrod;
-    width: 100%;
-    /* text-decoration: underline; */
-    display: flex;
-    position: static;
-    align-items: center;
-    justify-content: center;
-    font-size: 200%;
-
-
+    font-size: 300%;
+    font-weight:600
 }
 h2 {
     text-align: center;
     font-size: 35px;
-    color: rgb(41, 40, 40)
+    color:gainsboro
 }
-
-h4 {
-    text-align: center;
-    font-size: 35px;
-    color:rgb(34, 34, 34);
-    margin-top: 100px;
-}
-
-/* Button Styling */
 button.button {
-
-    background-color: darkgoldenrod;
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    overflow: visible;
-    text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    display: grid;
-    border: none;
-    padding: 8px 10px;
+font-family: inherit; 
+  font-size: 100%; 
+  overflow: visible;
+  text-align: center;
+  margin: 15px 10px;
+  display:flex;
+  float:left;
+  display: grid;
 }
-
-
-span.title {
-    text-align:center;
-    color:goldenrod;
-    margin-top: 150px;
-    margin-bottom:70px;
-    font-size: 35px;
+img {
+    float: left;
 }
-   
- 
+strong, a strong {
+    color: rgb(80, 11, 11);
+    font-size: 18px;
+}
+medium {
+    font-weight: bold;
+    font-size: 16px;
+    color: whitesmoke;
+}
+p {
+    color: rgb(80, 11, 11);
+    font-weight: 500;
+}
+div.box {
+    padding: 30px;
+    background-color: transparent;
+}
