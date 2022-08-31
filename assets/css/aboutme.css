@@ -1,9 +1,10 @@
+/* Main Page Styling */
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
-
+/* Background Image */
 body, html {
-    background-image: url("../images/BG5.jpg");
+    background-image: url("../images/BG1.jpg");
     background-size: cover;
     /* position: fixed; */
     height: 100%;
@@ -11,7 +12,7 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
+/* Main Titles */
 h1 {
     color: rgb(223, 177, 62);
     width: 100%;
@@ -23,26 +24,38 @@ h1 {
     font-size: 300%;
     font-weight:600
 }
+h2#mission {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+}
 h2 {
     text-align: center;
     font-size: 35px;
-    color:gainsboro
+    color:rgb(89, 139, 28);
+    font-weight: bold;
+    text-decoration: underline;
 }
+/* Homepage button styling */
 button.button {
 font-family: inherit; 
   font-size: 100%; 
   overflow: visible;
   text-align: center;
   margin: 15px 10px;
-  display:flex;
   float:left;
   display: grid;
+  background-color:rgb(89, 139, 28);
+  color:rgb(223, 177, 62);
+  border-color: rgb(89, 139, 28);
+  font-weight: bold;
 }
 img {
     float: left;
 }
+/* Headers Styling */
 strong, a strong {
-    color: rgb(80, 11, 11);
+    color: saddlebrown;
     font-size: 18px;
 }
 medium {
@@ -50,11 +63,25 @@ medium {
     font-size: 16px;
     color: whitesmoke;
 }
+/* Text Content Styling*/
+p#mission {
+    text-align: center;
+    margin: 10px 10px;
+}
 p {
-    color: rgb(80, 11, 11);
-    font-weight: 500;
+    color: rgb(223, 177, 62);
+    font-weight: 600;
 }
 div.box {
     padding: 30px;
     background-color: transparent;
+}
+/* Contact Us Section */
+h3 {
+    color: rgb(80, 11, 11);
+    font-size: 18px;
+}
+div.column {
+   text-align: center;
+   align-content: center;
 }
