@@ -28,18 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
   let $usStatesContainer = document.querySelector("#us-states-container");
   let $modalContainer = document.querySelector(".modal-container");
   let $favoriteCampsites = document.querySelector("#favorite-Campsites");
-  const storedFavs = JSON.parse(localStorage.getItem("facility-id"));
+  let storedFavs = JSON.parse(localStorage.getItem("facility-id"));
   console.log(storedFavs)
-  function contains(storedFavs, obj) {
+  if (storedFavs == null) { storedFavs = [] }
+  else {
     for (var i = 0; i < storedFavs.length; i++) {
-      if (storedFavs[i] === obj) {
-        console.log(storedFavs[i]);
-        favCampsites.push(storedFavs[i])
-        localStorage.setItem("facility-id", JSON.stringify(favCampsites));
-      }
+
+      console.log(storedFavs[i]);
+      favCampsites.push(storedFavs[i])
+      localStorage.setItem("facility-id", JSON.stringify(favCampsites));
+
     }
-    return false
   }
+
   // event listener for when options are changed
   $usStatesContainer.addEventListener('change', function (event) {
 
