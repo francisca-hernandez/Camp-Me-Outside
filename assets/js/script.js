@@ -318,12 +318,22 @@ $usStatesContainer.addEventListener('change', function (event) {
 
 $favoriteCampsites.addEventListener("click", function (event) {
 
+  let $rditContainer = document.getElementById("campstory-container");
+  let $rditModalContainer = document.querySelector(".modal-container");
+
   while ($campsiteContainer.hasChildNodes()) {
     $campsiteContainer.removeChild($campsiteContainer.firstChild);
   }
   while ($modalContainer.hasChildNodes()) {
     $modalContainer.removeChild($modalContainer.firstChild);
   }
+  while ($rditContainer.hasChildNodes()) {
+    $rditContainer.removeChild($rditContainer.firstChild);
+  }
+  while ($rditModalContainer.hasChildNodes()) {
+    $rditModalContainer.removeChild($rditModalContainer.firstChild);
+  }
+  
 
   const storedFavs = JSON.parse(localStorage.getItem("facility-id"));
   console.log(storedFavs)
@@ -372,23 +382,23 @@ $favoriteCampsites.addEventListener("click", function (event) {
 
 
 
-          // need to change to remove favorite.
+          // // need to change to remove favorite.
 
 
 
-          let $modalSaveButton = document.createElement("button");
-          $modalSaveButton.classList = ("button is-link");
-          $modalSaveButton.setAttribute("id", "campsite-save-button" + [i]);
-          $modalSaveButton.textContent = "Favorite";
+          // let $modalSaveButton = document.createElement("button");
+          // $modalSaveButton.classList = ("button is-link");
+          // $modalSaveButton.setAttribute("id", "campsite-save-button" + [i]);
+          // $modalSaveButton.textContent = "Favorite";
 
-          let $facilityId = [i].FacilityID;
+          // let $facilityId = [i].FacilityID;
 
-          $modalSaveButton.addEventListener("click", function () {
-            console.log($facilityId);
-            favCampsites.push($facilityId)
-            localStorage.setItem("facility-id", JSON.stringify(favCampsites));
-            console.log(favCampsites)
-          });
+          // $modalSaveButton.addEventListener("click", function () {
+          //   console.log($facilityId);
+          //   favCampsites.push($facilityId)
+          //   localStorage.setItem("facility-id", JSON.stringify(favCampsites));
+          //   console.log(favCampsites)
+          // });
 
 
 
@@ -405,7 +415,7 @@ $favoriteCampsites.addEventListener("click", function (event) {
 
           // append information into card
           $modalCardHeader.appendChild($modalCardTitle);
-          $modalCardHeader.appendChild($modalSaveButton);
+          // $modalCardHeader.appendChild($modalSaveButton);
           $modalCard.appendChild($modalCardHeader);
           $modalCard.appendChild($modalDescriptionContainer);
 
