@@ -101,7 +101,8 @@ sections.columns {
     height: fit-content;
 
 } 
-
-/* Background color for behing where the tiles are */
-
-/* Buttons for campsites and campfire stories */
+/* Modal Styling */
+p.subtitle {
+    width: fit-content;
+    text-align: center;
+}

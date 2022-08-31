@@ -81,7 +81,7 @@ $usStatesContainer.addEventListener('change', function (event) {
           $modalCardHeader.classList = ("modal-card-head")
 
           let $modalCardTitle = document.createElement("p");
-          $modalCardTitle.classList = ("modal-card-title");
+          $modalCardTitle.classList = ("subtitle");
           $modalCardTitle.textContent = data.RECDATA[i].FacilityName;
 
 
@@ -91,7 +91,7 @@ $usStatesContainer.addEventListener('change', function (event) {
 
 
           let $modalSaveButton = document.createElement("button");
-          $modalSaveButton.classList = ("button is-link");
+          $modalSaveButton.classList = ("button is-link mx-5");
           $modalSaveButton.setAttribute("id", "campsite-save-button" + [i]);
           $modalSaveButton.textContent = "Favorite";
 
