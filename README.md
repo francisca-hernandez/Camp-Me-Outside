@@ -40,8 +40,9 @@ SO THAT
 
 ### Screenshot 
 
-<!-- Make sure to resize the pictures so they fit appropriately  -->
-![](./assets/####)
+[Website Demo](CampMeOutside.Demo.mp4)<!-- Make sure to resize the pictures so they fit appropriately  -->
+
+![](./assets/####) 
 
 ### Link to Deployed Application
 
