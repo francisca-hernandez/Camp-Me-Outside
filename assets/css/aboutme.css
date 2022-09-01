@@ -4,13 +4,14 @@
 }
 /* Background Image */
 body, html {
-    background-image: url("../images/BG1.jpg");
+    background-image: url("../images/BG6.jpg");
     background-size: cover;
     /* position: fixed; */
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    
 }
 /* Main Titles */
 h1 {
