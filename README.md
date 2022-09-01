@@ -39,11 +39,11 @@ Unsplash
 
 [Website Demo](CampMeOutside.Demo.mp4)<!-- Make sure to resize the pictures so they fit appropriately  -->
 
-![Frontpage](./images/CampMeOutsideScreenshot.png)
+![Frontpage](./images/CampMeOutsidescreenshot.png)
 
 ![InProgresspage](./assets/images/Inprogress.jpg)
 
-![AboutUs](./images/SC.About.me.png)
+![AboutUs](./images/SCAboutme.png)
 
 
 ### Link to Deployed Application
