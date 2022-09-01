@@ -31,12 +31,20 @@
 * Reddit API - Generating Scary Stories
 
 ## Assets 
+Bulma
+Font Awesome
+Unsplash 
 
 ### Screenshot 
 
 [Website Demo](CampMeOutside.Demo.mp4)<!-- Make sure to resize the pictures so they fit appropriately  -->
 
-![Frontpage]](./images/CampMeOutsideScreenshot) 
+![Frontpage](./images/CampMeOutsideScreenshot.png)
+
+![InProgresspage](./assets/images/Inprogress.jpg)
+
+![AboutUs](./images/SC.About.me.png)
+
 
 ### Link to Deployed Application
 
