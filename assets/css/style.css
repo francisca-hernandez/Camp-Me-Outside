@@ -52,7 +52,7 @@ a.fav {
     color: saddlebrown;
     background-color: goldenrod
 }
-
+/* More Navbar Styling */
 div#navbarMenuHeroA.navbar-menu {
     align-items: stretch;
     justify-content: flex-end;
@@ -72,7 +72,6 @@ h1#where {
     color: white;
     font-weight: 400;
 }
-
 /* Campsites API */
 h2.api-head {
     text-align: center;

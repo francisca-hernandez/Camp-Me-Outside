@@ -4,10 +4,6 @@
 
 * Campsite locator and fireside story generator
 
-## User Story
-
-* 
-
 ## Acceptance Criteria
 
 *  Must use at least two server side APIs that we have not used in class before
@@ -19,34 +15,39 @@
 *  Must be deployed to GitHub Pages
 *  Must be interactive (i.e., accept and respond to user input)
 
-## How to Install and Run the Project
- 
- 
 ## How to Use 
- 
+
+* Copy and paste the link into your browser - no need to install
  
 ## Built Using
 
 * Bulma - CSS Framework
 * Font Awesome - adding Icons
 * Unsplash - Free Photos to use
-* 
 
+### API's Used
+
+* Recreation.gov API - for generating campsites
+* Reddit API - Generating Scary Stories
 
 ## Assets 
 
-
-
 ### Screenshot 
 
-<!-- Make sure to resize the pictures so they fit appropriately  -->
-![](./assets/####)
+[Website Demo](CampMeOutside.Demo.mp4)<!-- Make sure to resize the pictures so they fit appropriately  -->
+
+![Frontpage]](./images/CampMeOutsideScreenshot) 
 
 ### Link to Deployed Application
 
-<!-- Link -->
+https://francisca-hernandez.github.io/Camp-Me-Outside/
 
 This site was build using [Github Pages]()
 
 ## Contributers
+
+* Gigi DeBortoli
+* Francisca Hernandez
+* Joseph Hernandez
+* David Ricksgers
 
