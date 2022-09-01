@@ -224,7 +224,7 @@ $usStatesContainer.addEventListener('change', function (event) {
           $modalCardHeader.classList = ("modal-card-head")
 
           let $modalCardTitle = document.createElement("p");
-          $modalCardTitle.classList = ("modal-card-title");
+          $modalCardTitle.classList = ("subtitle");
           $modalCardTitle.textContent = data.data.children[i].data.title;
 
           // create description
@@ -377,7 +377,7 @@ $favoriteCampsites.addEventListener("click", function (event) {
           $modalCardHeader.classList = ("modal-card-head")
 
           let $modalCardTitle = document.createElement("p");
-          $modalCardTitle.classList = ("modal-card-title");
+          $modalCardTitle.classList = ("subtitle");
           $modalCardTitle.textContent = data.FacilityName;
 
 

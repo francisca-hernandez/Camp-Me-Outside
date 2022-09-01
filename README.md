@@ -4,12 +4,6 @@
 
 * Campsite locator and fireside story generator
 
-## User Story
-
-AS A 
-I WANTED
-SO THAT 
-
 ## Acceptance Criteria
 
 *  Must use at least two server side APIs that we have not used in class before
@@ -42,7 +36,7 @@ SO THAT
 
 [Website Demo](CampMeOutside.Demo.mp4)<!-- Make sure to resize the pictures so they fit appropriately  -->
 
-![](./assets/####) 
+![Frontpage]](./images/CampMeOutsideScreenshot) 
 
 ### Link to Deployed Application
 
